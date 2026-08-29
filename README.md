@@ -4,7 +4,7 @@ Official Windows releases for **CD-TEAM Monitor**, an operations tool for Walmar
 
 ## Latest Release
 
-**v2026.08.29.68**
+**v2026.08.29.69**
 
 Download the latest executable from the [Releases](https://github.com/hungnp-dev/walmart-tool-release/releases/latest) page.
 
@@ -32,4 +32,4 @@ Releases are built automatically by GitHub Actions from the **master** branch. E
 
 ## Security
 
-Public release assets do not bundle Telegram credentials, private browser profiles, customer bookmarks, or Google Sheet URLs.
+Public release assets do not bundle Telegram credentials, private browser profiles, customer bookmarks, or Google Sheet URLs. The CloakBrowser runtime entitlement is injected from a GitHub Actions secret during the trusted release build and is never committed to source control.
