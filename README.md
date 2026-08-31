@@ -4,7 +4,7 @@ Official Windows releases for **CD-TEAM Monitor**, an operations tool for Walmar
 
 ## Latest Release
 
-**v2026.08.31.77**
+**v2026.08.31.78**
 
 Download the latest executable from the [Releases](https://github.com/hungnp-dev/walmart-tool-release/releases/latest) page.
 
@@ -32,4 +32,4 @@ Releases are built automatically by GitHub Actions from the **master** branch. E
 
 ## Security
 
-Public release assets do not bundle Telegram credentials, private browser profiles, customer bookmarks, or Google Sheet URLs. Microsoft Edge is used from the Windows installation and no third-party browser runtime is bundled.
+Private release assets include the bundled deployment defaults from source config. Runtime configuration and local history stay under **%APPDATA%\CD-Team Monitor**. Microsoft Edge is used from the Windows installation and no third-party browser runtime is bundled.
