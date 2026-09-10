@@ -4,7 +4,7 @@ Official Windows releases for **CD-TEAM Monitor**, an operations tool for Walmar
 
 ## Latest Release
 
-**v2026.09.08.99**
+**v2026.09.10.100**
 
 Download the latest executable from the [Releases](https://github.com/hungnp-dev/walmart-tool-release/releases/latest) page.
 
