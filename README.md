@@ -4,27 +4,27 @@ Official Windows releases for **CD-TEAM Monitor**, an operations tool for Walmar
 
 ## Latest Release
 
-**v2026.09.16.106**
+**v2026.09.24.107**
 
 Download the latest executable from the [Releases](https://github.com/hungnp-dev/walmart-tool-release/releases/latest) page.
 
 ## Main Capabilities
 
-- Scheduled and manual Walmart order checks
-- Live, visible processing progress for every order
+- Backend-queued Walmart order checks
+- MongoDB-backed order, sync, retry, and audit state
 - Centralized employee, customer, and master Google Sheet configuration
 - Automatic status synchronization back to Google Sheets
 - Browser profile and bookmark management
-- Telegram commands, notifications, and multi-order lookup
+- Fast master-order lookup from MongoDB
 - Built-in update support for Windows VPS deployments
 
 ## Installation
 
 1. Download **CD-TEAM-Monitor-*.exe** from the latest release.
 2. Place it in a writable folder on the Windows VPS.
-3. Start the application and configure Apps Script and Telegram locally.
+3. Start the application and connect it to the deployed Backend API.
 
-Runtime configuration and order history are stored under **%APPDATA%\CD-Team Monitor** and are preserved when the EXE is replaced.
+Order history is stored in MongoDB. Only machine-local UI and browser files remain under **%APPDATA%\CD-Team Monitor**.
 
 ## Release Policy
 
@@ -32,4 +32,4 @@ Releases are built automatically by GitHub Actions from the **master** branch. E
 
 ## Security
 
-Private release assets include the bundled deployment defaults from source config. Runtime configuration and local history stay under **%APPDATA%\CD-Team Monitor**. Microsoft Edge is used from the Windows installation and no third-party browser runtime is bundled.
+Private release assets include deployment defaults from source config. MongoDB credentials must be supplied through the protected runtime environment or private configuration and must not be committed to the executable. Microsoft Edge is used from the Windows installation and no third-party browser runtime is bundled.
